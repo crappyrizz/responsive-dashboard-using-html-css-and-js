@@ -33,6 +33,10 @@ body{
     overflow: hidden;
 }
 
+.navigation.active{
+    width: 80px;
+}
+
 .navigation ul {
     position: absolute;
     top: 0;
@@ -137,6 +141,11 @@ body{
     transition: 0.5s;
 }
 
+.main.active{
+    width: calc(100% - 300px);
+    left: 80px;
+}
+
 .topbar{
     width: 100%;
     height: 60px;
@@ -204,3 +213,157 @@ body{
     object-fit: cover;
 }
 
+.cardBox{
+    position:relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.cardBox .card {
+    position: relative;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px black;
+}
+
+.cardBox .card .numbers{
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: grey;
+}
+
+.cardBox .card .cardName {
+    color: black;
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.cardBox .card .iconBx{
+    font-size: 3.5rem;
+    color: black;
+}
+
+.cardBox .card:hover{
+    background-color: blue;
+
+}
+
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName,
+.cardBox .card:hover .iconBx{
+    color: white;
+
+}
+
+/* =================== order details ================== */
+.details {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    margin-top: 10px;
+}
+
+.details .recentOrders{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 7px 25px black ;
+    border-radius: 20px;
+}
+
+.details .cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cardHeader h2{
+    font-weight: 600;
+    color: blue;
+}
+
+.cardHeader .btn{
+    position: relative;
+    padding: 5px 10px;
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+}
+
+.details table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.details table thead td{
+    font-weight: 600;
+}
+.details .recentOrders table tr{
+    color: black;
+    border-bottom: 1px solid black;
+}
+.details .recentOrders table tr:last-child{
+    border-bottom: none;
+}
+.details .recentOrders table tbody tr:hover{
+    background-color: blue;
+    color: white;
+}
+.details .recentOrders table tr td{
+    padding: 10px;
+}
+.details .recentOrders table tr td:last-child{
+    text-align: end;
+}
+.details .recentOrders table tr td:nth-child(2){
+    text-align: end;
+}
+.details .recentOrders table tr td:nth-child(3){
+    text-align: center;
+}
+.status.delivered{
+    padding: 2px 4px;
+    background: green;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.status.return{
+    padding: 2px 4px;
+    background: red;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.status.pending{
+    padding: 2px 4px;
+    background: yellow;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.status.inprogress{
+    padding: 2px 4px;
+    background: orange;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}

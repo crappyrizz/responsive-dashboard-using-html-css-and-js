@@ -3,7 +3,7 @@ uses iconic icons for the icons
 used google fonts for the font
 
 what does white-space norwap do?
- border-top-left-radius?
+border-top-left-radius?
 .navigation ul li:hover a::before - how that is used
 box shadow?
 pointer-events?
@@ -22,3 +22,7 @@ calc kwa css?
 diff btwn background and background-color
 justify content?
 hapo kwa search bar kidogo?
+movement ya main after clicking the toggle
+grid template columns
+nth-child
+last-child
